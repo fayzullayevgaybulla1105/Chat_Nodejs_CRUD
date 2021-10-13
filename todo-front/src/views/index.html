@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>chat</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="chat-box">
+		<header class="chat-header">
+			<h2 id="usernameIndex"></h2>
+
+			<div class="close" id="logout">
+				<span class="close-element"><img class="exitbg" src="/img/exitbuttonbg.svg" alt="" width="50"
+						height="50"> </span>
+				<span class="close-element"></span>
+			</div>
+		</header>
+		<div class="main-heading">
+			<span>today</span>
+		</div>
+		<main class="chat-main">
+
+		</main>
+		<div class="chat-form">
+			<input id="writeText" placeholder="Enter your message.." autocomplete="off">
+			<input id="writeUrl" class="writeUrl" placeholder="Enter your img Url.." type="url" required>
+			<button type="button" id="imgBtn"><img src="./design/image.svg" alt="icon img file" height="20"
+					width="20"></button>
+			<button type="button" id="btn">send</button>
+			<button type="button" id="btn1" class="btn1">send</button>
+		</div>
+	</div>
+	<script src="/js/request.js"></script>
+	<script src="/js/todo.js"></script>
+
+</body>
+
+</html>

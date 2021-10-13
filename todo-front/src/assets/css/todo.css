@@ -1,0 +1,53 @@
+body {
+	display: block;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+	margin:  0 auto;
+	margin-top: 25px;
+	padding: 30px;
+	box-shadow: 0 0 15px 1px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.wrapper form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper form input:first-child {
+	flex-grow: 1;
+}
+
+form input, form button {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.todosList {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.todosList li {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px;
+	font-size: 25px;
+	margin-bottom: 8px;
+	border:  1px solid black;
+	font-weight: bold;
+}
+.todosList li span {
+	margin-right: 25px;
+}
+
+li button {
+	background-color: red;
+	color:  white;
+	font-weight: bold;
+}

@@ -1,0 +1,326 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(to bottom, #C9DAE7, #84A8C7); */
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat-box{
+    margin-top: 60px;
+    height: 545px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.chat-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px 22px;
+    border-radius: 10px 10px 0 0;
+}
+
+.exitbg{
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.chat-heading{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.chat-heading::before{
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.close-element{
+    display: block;
+    height: 3px;
+    width: 20px;
+    /* background-color: grey; */
+    
+    position: absolute;
+    
+}
+
+.close-element:first-child{
+    /* transform: rotate(-45deg); */
+    width: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* margin-top: auto; */
+    
+}
+
+/* .close-element:nth-child(2){
+    transform: rotate(200deg);
+} */
+
+.close:hover{
+    opacity: 1;
+}
+
+.chat-main{
+    height: 350px;
+    width: 100%;
+    background-color: white;
+    /* background-image:url('../img/back.jpg'); */
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px;
+}
+
+.main-heading{
+    text-align: center;
+    margin-top: 16px;
+}
+
+.main-heading > span{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #E6E2E0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.main-heading > span::before, .main-heading > span::after{
+    content: '';
+    width: 45%;
+    height: 2px;
+    background-color: #E6E2E0;
+    margin: 0 5px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding:  5px;
+    border-radius: 3px;
+    max-width: 220px;
+    width: auto;
+    margin: 10px 0;
+    margin-left: auto;
+}
+
+.message > time{
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    font-size: 13px;
+    font-weight: bold;
+    color: #c2bbb8;
+    margin-bottom: 3px;
+}
+/* .message .message-text */
+
+.message.message-left   {}
+
+
+.message-text{
+    background-color: rgb(230, 222, 222);
+    font-size: 2010pxpx;
+    margin: 0;
+    line-height: 16px;
+    max-width: 220px;
+    font-weight: 400;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.message-left{
+    margin-right: auto;
+    margin-left: 0;
+    
+}
+
+
+.message-left >.pimg{
+    display: flex;
+    align-items: center;
+}
+
+.message-right >.pimg{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.message-left > time{
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.pimg >div{
+    width: 60px; 
+    height:60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:red;
+    color: white;
+    font-weight: 900;
+}
+
+.message-left > .message-text{
+    background-color: #E6E2E0;
+}
+
+.chat-form{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-top: 1px solid #E6E2E0;
+    padding-top: 10px;
+    position: relative;
+}
+
+#writeText{
+    position: relative;
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 20px;
+    z-index: 10;
+    padding-left: 35px;
+    /* height: 50px; */
+}
+
+#btn{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #658AD8;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+#imgBtn{
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.writeUrl{
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 20px;
+    z-index: 0;
+    padding-left: 35px;
+}
+
+.urlActive{
+    z-index: 20;
+}
+
+.message > img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.btn1{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #658AD8;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.btn1Act {
+    z-index: 15;
+}
+
+.closeBtn{
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    background-image: url('../design/cancel.svg');
+    background-size: 18px 18px;
+    background-position: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding: 0;
+    z-index: 25;
+}

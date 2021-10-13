@@ -1,0 +1,29 @@
+[
+    {
+        "username": "salimjon",
+        "password": "1234",
+        "gender": "1",
+        "age": "25",
+        "contact": "941710171",
+        "bio": "",
+        "user_id": 1
+    },
+    {
+        "username": "fayzulloh",
+        "password": "1234",
+        "gender": "1",
+        "age": "15",
+        "contact": "+998912007435",
+        "bio": "aaa",
+        "user_id": 2
+    },
+    {
+        "username": "Navruzbek",
+        "password": "bobo2103",
+        "gender": "1",
+        "age": "2",
+        "contact": "+998941710171",
+        "bio": "Assalomu alaykum barcha barchaga",
+        "user_id": 3
+    }
+]

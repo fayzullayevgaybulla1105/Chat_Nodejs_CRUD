@@ -1,0 +1,51 @@
+[
+    {
+        "todo_id": 3,
+        "message_text": "salomlar",
+        "message_time": "16:46",
+        "user_id": 1,
+        "username": "salimjon"
+    },
+    {
+        "todo_id": 4,
+        "message_text": "rwer",
+        "message_time": "10:33",
+        "user_id": 1,
+        "username": "salimjon"
+    },
+    {
+        "todo_id": 5,
+        "message_text": "tinchmisila",
+        "message_time": "15:38",
+        "user_id": 3,
+        "username": "Navruzbek"
+    },
+    {
+        "todo_id": 6,
+        "message_text": "alo",
+        "message_time": "15:38",
+        "user_id": 3,
+        "username": "Navruzbek"
+    },
+    {
+        "todo_id": 7,
+        "message_text": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fyandex.uz%2F&psig=AOvVaw3oTgI2cQJr4BMQ5ndbkHp6&ust=1634208121295000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJiaw-iZx_MCFQAAAAAdAAAAABAD",
+        "message_time": "15:42",
+        "user_id": 3,
+        "username": "Navruzbek"
+    },
+    {
+        "todo_id": 8,
+        "message_text": "sasas",
+        "message_time": "15:42",
+        "user_id": 3,
+        "username": "Navruzbek"
+    },
+    {
+        "todo_id": 9,
+        "message_text": "asdasdasd",
+        "message_time": "15:44",
+        "user_id": 3,
+        "username": "Navruzbek"
+    }
+]
